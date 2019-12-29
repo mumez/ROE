@@ -19,7 +19,7 @@ RATestSQLiteSemantics class >> runTests [
 { #category : #configuration }
 RATestSQLiteSemantics >> connection [
 	^ connection ifNil:
-		[connection := UDBCSQLite3Connection on: self defaultConnectionArgs.
+		[connection := SQLite3Connection on: self defaultConnectionArgs.
 		 connection open; yourself]
 ]
 

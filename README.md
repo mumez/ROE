@@ -20,4 +20,12 @@ Metacello new
   repository: 'github://mumez/ROE/src';
   load
 ```
+## Testing
+
+Before unit testing, you should set database URLs according to your environment.
+
+RATestPostgresSemantics urlString: 'psql://postgres:passwd@localhost:5432/postgres'.
+RATestTarantoolSemantics uriString: 'taran:talk@localhost:3301'.
+
+For SQLite3, please put the sqlite3 shared library (libsqlite3.so, dylib, dll or whatever}) on your image directory.
 
