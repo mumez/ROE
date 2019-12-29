@@ -12,6 +12,17 @@ RATestPostgresSemantics class >> initialize [
 	UrlString := nil
 ]
 
+{ #category : #testing }
+RATestPostgresSemantics class >> runTests [
+	<script>
+	| ts |
+	ts := TestSuite named: 'RAPostgresTests'.
+	(RATestSemantics selectorsInProtocol: 'testing') do: [ :sel |
+		ts addTest: (RATestPostgresSemantics selector: sel) ].
+	^ ts run inspect.
+
+]
+
 { #category : #accessing }
 RATestPostgresSemantics class >> urlString [
 	^ UrlString
