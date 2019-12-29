@@ -48,7 +48,7 @@ BaselineOfRoe >> p3: spec [
 { #category : #'external projects' }
 BaselineOfRoe >> pharoSqlite3: spec [
 	spec
-		baseline: 'Pharo-SQLite3'
+		baseline: 'SQLite3'
 		with: [ spec
 				repository: 'github://pharo-rdbms/Pharo-SQLite3/src';
 				loads: 'default' ]
