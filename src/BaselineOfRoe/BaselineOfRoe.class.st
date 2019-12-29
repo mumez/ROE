@@ -13,17 +13,17 @@ BaselineOfRoe >> baseline: spec [
 			self pharoSqlite3: spec.
 			self tarantalk: spec.
 			spec
+				package: 'Roe-Relations-Core';
 				package: 'Roe-Attributes';
 				package: 'Roe-Conditions';
 				package: 'Roe-Mapping';
-				package: 'Roe-Relations-Concrete';
-				package: 'Roe-Relations-Core';
-				package: 'Roe-Relations-Indexed';
+				package: 'Roe-Relations-Concrete' with: [spec requires: #('Roe-Relations-Core')];
+				package: 'Roe-Relations-Indexed' with: [spec requires: #('Roe-Relations-Core')];
 				package: 'Roe-Tuples';
 				package: 'Roe-Visitors';
-				package: 'Roe-Relations-Concrete-Tarantool';
-				package: 'Roe-Relations-Concrete-Postgres';
-				package: 'Roe-Relations-Concrete-SQLite';
+				package: 'Roe-Relations-Concrete-Tarantool' with: [spec requires: #('Roe-Relations-Concrete')];
+				package: 'Roe-Relations-Concrete-Postgres' with: [spec requires: #('Roe-Relations-Concrete')];
+				package: 'Roe-Relations-Concrete-SQLite' with: [spec requires: #('Roe-Relations-Concrete')];
 				package: 'Roe-Tests'.
 			spec
 				group: 'default' with: #('Core' 'Roe-Postgres' 'Roe-SQLite' 'Roe-Tarantool' 'Tests');
