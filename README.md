@@ -33,7 +33,7 @@ For SQLite3, please put the sqlite3 shared library (libsqlite3.so, dylib, dll or
 
 Note that RATestSemantics is an abstract class and should not be run.
 
-There are also combenconvenience method #runTests.
+There are also convenience method #runTests.
 ```
 RATestPostgresSemantics runTests.
 RATestSQLiteSemantics runTests.
