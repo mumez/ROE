@@ -30,9 +30,9 @@ BaselineOfRoe >> baseline: spec [
 				group: 'Core'
 					with:
 					#(#'Roe-Attributes' #'Roe-Conditions' #'Roe-Mapping' #'Roe-Relations-Concrete' #'Roe-Relations-Core' #'Roe-Relations-Indexed' #'Roe-Tests' #'Roe-Tuples' #'Roe-Visitors');
-				group: 'Roe-Postgres' with: #('Roe-Relations-Concrete-Postgres');
-				group: 'Roe-SQLite' with: #('Roe-Relations-Concrete-SQLite');
-				group: 'Roe-Tarantool' with: #('Roe-Relations-Concrete-Tarantool');
+				group: 'Roe-Postgres' with: #('P3' 'Roe-Relations-Concrete-Postgres');
+				group: 'Roe-SQLite' with: #('SQLite3' 'Roe-Relations-Concrete-SQLite');
+				group: 'Roe-Tarantool' with: #('Tarantalk' 'Roe-Relations-Concrete-Tarantool');
 				group: 'Tests' with: #('Roe-Tests') ]
 ]
 
