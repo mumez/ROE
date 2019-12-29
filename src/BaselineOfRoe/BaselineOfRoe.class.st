@@ -16,6 +16,7 @@ BaselineOfRoe >> baseline: spec [
 				package: 'Roe-Relations-Core';
 				package: 'Roe-Attributes';
 				package: 'Roe-Conditions';
+				package: 'Roe-Extensions';
 				package: 'Roe-Mapping';
 				package: 'Roe-Relations-Concrete' with: [spec requires: #('Roe-Relations-Core')];
 				package: 'Roe-Relations-Indexed' with: [spec requires: #('Roe-Relations-Core')];
@@ -29,7 +30,7 @@ BaselineOfRoe >> baseline: spec [
 				group: 'default' with: #('Core' 'Roe-Postgres' 'Roe-SQLite' 'Roe-Tarantool' 'Tests');
 				group: 'Core'
 					with:
-					#(#'Roe-Attributes' #'Roe-Conditions' #'Roe-Mapping' #'Roe-Relations-Concrete' #'Roe-Relations-Core' #'Roe-Relations-Indexed' #'Roe-Tests' #'Roe-Tuples' #'Roe-Visitors');
+					#(#'Roe-Attributes' #'Roe-Conditions' #'Roe-Extensions' #'Roe-Mapping' #'Roe-Relations-Concrete' #'Roe-Relations-Core' #'Roe-Relations-Indexed' #'Roe-Tests' #'Roe-Tuples' #'Roe-Visitors');
 				group: 'Roe-Postgres' with: #('P3' 'Roe-Relations-Concrete-Postgres');
 				group: 'Roe-SQLite' with: #('SQLite3' 'Roe-Relations-Concrete-SQLite');
 				group: 'Roe-Tarantool' with: #('Tarantalk' 'Roe-Relations-Concrete-Tarantool');
