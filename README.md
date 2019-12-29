@@ -29,3 +29,11 @@ RATestTarantoolSemantics uriString: 'taran:talk@localhost:3301'.
 
 For SQLite3, please put the sqlite3 shared library (libsqlite3.so, dylib, dll or whatever}) on your image directory.
 
+Note that RATestSemantics is an abstract class and should not be run.
+
+There are also combenconvenience method #runTests.
+```
+RATestPostgresSemantics runTests.
+RATestSQLiteSemantics runTests.
+RATestTarantoolSemantics runTests.
+```
